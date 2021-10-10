@@ -26,7 +26,7 @@ options = {
     isPlayingBgm: true,
     isReplayEnabled: true,
 	isDrawingParticleFront: true,
-    theme: "shape"
+    theme: "dark"
 };
 
 let x = 5;
@@ -46,7 +46,9 @@ function update() {
 		
 	}
 	//create ball net and field
-	color("light_black")
+	color("green");
+	rect(0, 60, 300, 200);
+	color("light_black");
 	for(let i = 72; i < 235; i+=5){
 		box(i, 49, 1, 69);
 	}
